@@ -181,6 +181,7 @@
       body::-webkit-scrollbar,.main::-webkit-scrollbar,.div-contenedor::-webkit-scrollbar{display:none}
       .color1{color:var(--color1);}.color2{color:var(--color2);}.color3{color:var(--color3);}.color4{color:var(--color4);}.color5{color:var(--color5);}
       .main{display: -webkit-box;display: -ms-flexbox;display: flex;  -webkit-box-pack: center;  -ms-flex-pack: center;  justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; width: 100%;height:-webkit-max-content;height:-moz-max-content;height:max-content;min-height:  100vh;-webkit-box-orient: vertical;-webkit-box-direction: normal;-ms-flex-direction: column;flex-direction: column;z-index: 3;position: relative;}
+      img{display: block;}
       .div-contenedor{text-align: center;width: 100%;}
       .h1{font-size: 2rem; margin: 0;padding: 0 1rem; }
       .img-logo{margin: 2rem auto 1.5rem auto;}
@@ -188,6 +189,7 @@
       .p__span{white-space: nowrap;}
       a.a,a.a:focus,a.a:hover,a.a:visited{text-decoration: none;display: -webkit-inline-box;display: -ms-inline-flexbox;display: inline-flex;-webkit-box-align: center;-ms-flex-align: center;align-items: center;color: var(--color4);font-weight:500;font-size: 13px; align-items: center;-ms-flex-wrap: wrap;flex-wrap: wrap; white-space: normal; }
       .contacto{display: -ms-grid;display: grid; margin: auto; width:-webkit-max-content; width:-moz-max-content; width:max-content; gap: 10px;text-align: left;padding: 0 7px}
+      .contacto__ico-span{background-color: var(--color5);-webkit-box-sizing:content-box;box-sizing:content-box;margin-right: 5px;border-radius: 9px;width: 15px;height: 15px;display: flex;justify-content: center;align-items: center;}
       .contacto__icono{background-color: var(--color5);-webkit-box-sizing:content-box;box-sizing:content-box; border: 5px solid var(--color5);margin-right: 5px;border-radius: 9px;width: 15px;height: 15px;}
       @media (min-width: 520px){a.a,a.a:focus,a.a:hover,a.a:visited{font-size: 16px;}.h1{font-size: 2.5rem;}.img-logo{margin: 3rem auto 2rem auto;}.p{font-size: 1.5rem;}.contacto{padding: 0 1rem;}.contacto__icono{margin-right: 10px;}}
     </style>
@@ -198,18 +200,18 @@
   <main class="main">
     <div class="div-contenedor" >
       <h1 class="h1 color4">Website under construction</h1>
-      <img src="img/logo200x200-circular.webp" alt="Logo of Cake Atelier Copenhagen" class="img-logo" width="200px" height="200px">
+      <img src="img/logo300x300-circular.webp" alt="Logo of Cake Atelier Copenhagen" class="img-logo" width="200px" height="200px">
         
       <div>
         <p class="p">Need to get in touch in the meantime? <span class="p__span">Reach out to us at:</span></p>
         <div class="contacto">
           <a class="a" target="_blank" rel="noopener noreferrer" href="mailto:orders@cakeateliercph.dk" aria-label="Email Cake Atelier Copenhagen">
-            <img class="contacto__icono" src="img/iconos/envelope-regular.webp" alt="Email Icon for Cake Atelier Copenhagen">
+            <span class="contacto__ico-span"><img src="img/iconos/envelope-regular.svg" alt="Email Icon for Cake Atelier Copenhagen"></span>
                     orders@cakeateliercph.dk</a>
           <a class="a" target="_blank" rel="noopener noreferrer" href="https://wa.me/4591702650" aria-label="Whatsapp Cake Atelier Copenhagen">
             <img class="contacto__icono" src="img/iconos/whatsapp-blanco.svg" alt="WhatsApp Icon for Cake Atelier Copenhagen"> +45 91702650</a>
           <a class="a" target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/cakeatelier.cph/?hl=en" aria-label="Instagram Cake Atelier Copenhagen">
-            <img class="contacto__icono" src="img/iconos/instagram.webp" alt="Instagram Icon for Cake Atelier Copenhagen"><span>Follow us for updates and sneak peeks!</span> </a>
+            <img class="contacto__icono" src="img/iconos/instagram-blanco.svg" alt="Instagram Icon for Cake Atelier Copenhagen"><span>Follow us for updates and sneak peeks!</span> </a>
         </div>
              
       </div>
