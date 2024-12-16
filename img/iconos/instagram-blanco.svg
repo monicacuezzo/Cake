@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   height="1864.6555"
+   stroke-miterlimit="10"
+   style="clip-rule:evenodd;fill-rule:nonzero;stroke-linecap:round;stroke-linejoin:round"
+   version="1.1"
+   viewBox="0 0 1865.066 1864.6555"
+   width="1865.066"
+   id="svg14"
+   sodipodi:docname="instagram-blanco.svg"
+   inkscape:version="1.1 (c68e22c387, 2021-05-23)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview16"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     showgrid="false"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:zoom="0.124"
+     inkscape:cx="68.548387"
+     inkscape:cy="1665.3226"
+     inkscape:window-width="1920"
+     inkscape:window-height="991"
+     inkscape:window-x="-9"
+     inkscape:window-y="-9"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="Untitled" />
+  <defs
+     id="defs9">
+    <linearGradient
+       gradientUnits="userSpaceOnUse"
+       id="LinearGradient"
+       x1="1500"
+       x2="2805.8101"
+       y1="1500"
+       y2="194.188">
+      <stop
+         offset="0"
+         stop-color="#7e7e7e"
+         id="stop2" />
+      <stop
+         offset="0.555825"
+         stop-color="#c8c8c8"
+         id="stop4" />
+      <stop
+         offset="1"
+         stop-color="#7e7e7e"
+         id="stop6" />
+    </linearGradient>
+  </defs>
+  <g
+     id="Untitled"
+     style="opacity:0.326633;fill:#000000;fill-opacity:1"
+     transform="translate(-567.6415,-567.8745)">
+    <path
+       d="m 1500,1189.05 c -171.72,0.07 -310.87,139.31 -310.83,311.03 0.04,171.71 139.27,310.89 310.99,310.87 171.71,-0.02 310.9,-139.23 310.9,-310.95 -0.13,-171.72 -139.34,-310.88 -311.06,-310.95 z M 2227,950.043 C 2195,868.955 2130.81,804.765 2049.72,772.768 1927.3,724.441 1635.83,735.284 1500,735.284 c -135.83,0 -427.01,-11.251 -549.782,37.484 -81.089,31.997 -145.278,96.187 -177.275,177.275 -48.269,122.417 -37.484,414.187 -37.484,549.897 0,135.71 -10.785,427.13 37.717,549.96 31.997,81.09 96.187,145.28 177.275,177.27 122.419,48.33 413.899,37.49 549.779,37.49 135.89,0 426.96,11.25 549.73,-37.49 81.09,-31.99 145.28,-96.18 177.27,-177.27 48.68,-122.42 37.49,-414.19 37.49,-549.9 0,-135.71 11.19,-427.07 -37.49,-549.898 z M 1500,1978.02 c -264,0 -478.02,-214.02 -478.02,-478.02 0,-264 214.02,-478.02 478.02,-478.02 264,0 478.02,214.02 478.02,478.02 0.16,126.83 -50.16,248.5 -139.84,338.18 -89.68,89.68 -211.35,140 -338.18,139.84 z m 497.72,-864.52 c -61.63,0.04 -111.61,-49.91 -111.63,-111.54 -0.02,-61.625 49.93,-111.6 111.56,-111.611 61.63,-0.011 111.59,49.947 111.59,111.581 0.13,29.6 -11.54,58.03 -32.42,79.01 -20.88,20.98 -49.26,32.78 -78.86,32.8 z m 428.47,771.25 c -7.52,149.41 -41.62,281.8 -150.69,390.58 -109.07,108.77 -241.34,143.58 -390.58,150.69 -153.95,8.68 -615.54,8.68 -769.49,0 -149.414,-7.52 -281.336,-41.68 -390.581,-150.69 -109.245,-109.02 -143.581,-241.46 -150.693,-390.58 -8.686,-154.02 -8.686,-615.66 0,-769.5 7.52,-149.409 41.215,-281.797 150.693,-390.576 109.478,-108.779 241.75,-143.173 390.581,-150.285 153.95,-8.686 615.54,-8.686 769.49,0 149.41,7.52 281.74,41.681 390.58,150.693 108.84,109.012 143.58,241.459 150.69,390.868 8.69,153.43 8.69,614.67 0,768.8 z"
+       fill="url(#LinearGradient)"
+       fill-rule="nonzero"
+       opacity="1"
+       stroke="none"
+       id="path11"
+       style="fill:#ffffff;fill-opacity:1"
+       sodipodi:nodetypes="cssccccsccsccsccscccsscsccsscscccccccccsccscc" />
+  </g>
+</svg>
