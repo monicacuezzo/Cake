@@ -4,14 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5">
-    <title>Cake Atelier Copenhagen</title>
+    <title>Cake</title>
+    <meta name="robots" content="noindex">
+
     <link rel="icon" href="/favicon.ico" />
     <link rel="icon" type="image/png" href="img/favicon/favicon-isologo-32x32.png" sizes="32x32" />
     <link rel="icon" type="image/png" href="img/favicon/favicon-isologo-16x16.png" sizes="16x16" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap" rel="stylesheet">
 
     <style>
         /* // <uniquifier>: Use a unique and descriptive class name
@@ -164,79 +166,53 @@
     </style>
 
     <style>
-      
       :root {
-         
-  --color1: #d4d884;
-  --color2: #ebf494;
-  --color3: #141c0c;
-  --color4: #979a5f;
-  --color5: #b8ba73;
-  --fondo: #f4c6b8;
-}
-
- .color1{color:var(--color1);}.color2{color:var(--color2);}.color3{color:var(--color3);}.color4{color:var(--color4);}.color5{color:var(--color5);}
- 
-body{ font-family: "fegtree", sans-serif!important;color: var(--color4);
-;position: relative;z-index: 1}
-.fondo{position: absolute;z-index: 2;
-background:url(img/tortas/torta2.jpeg);
-background-size: contain;
-background-position: right;
-background-repeat: no-repeat;opacity: 0.6;width: 100%;height: 100%;
-}
-        /* .div-contenedor{display: flex;  justify-content: center; align-items: center; width: 100vw;height:max-content;min-height:  100vh;flex-direction: column;z-index: 3;position: relative;} */
-        .mensaje{text-align: center;}
-        h1{font-size: 2.5rem;  }
-        h2{font-size: 3rem;font-weight: 700;color: #383433;}
-        p{font-weight:600;color: #383433;font-size: 1.5rem;}
-         
-        a,a:focus.a:hover.a:visited{text-decoration: none;display: flex;align-items: center;color: var(--color4);font-weight:500}
-        .contacto__icono{background-color: var(--color5);box-sizing:content-box; border: 5px solid var(--color5);margin-right: 10px;border-radius: 9px;width: 15px;height: 15px;}
+        --color1: #d4d884;
+        --color2: #ebf494;
+        --color3: #141c0c;
+        --color4: #979a5f;
+        --color5: #b8ba73;
+        --fondo: #f4c6b8;
+      }
+      .color1{color:var(--color1);}.color2{color:var(--color2);}.color3{color:var(--color3);}.color4{color:var(--color4);}.color5{color:var(--color5);}
+      body{ font-family: "Montserrat", sans-serif!important;color: var(--color4);;position: relative; }
+      body *{padding: 0;margin: 0;}
+      .main{display: flex;  justify-content: center; align-items: center; width: 100vw;height:max-content;min-height:  100vh;flex-direction: column;z-index: 3;position: relative;}
+      .div-contenedor{text-align: center;}
+      .h1{font-size: 2.5rem; margin: 0; padding: 0 1rem;}
+      .img-logo{margin: 3rem auto 2rem auto;}
+      .p{font-weight:600;color: #383433;font-size: 1.5rem;margin-bottom: 1rem;padding: 0 1rem;}
+      .p__span{white-space: nowrap;}
+      .a,.a:focus,.a:hover,.a:visited{text-decoration: none;display: inline-flex;align-items: center;color: var(--color4);font-weight:500;padding: 0 0.5rem; font-size: 14px; align-items: center;flex-wrap: wrap; white-space: normal; }
+      .contacto{display: grid; margin: auto; width:max-content; gap: 10px;}
+      .contacto__icono{background-color: var(--color5);box-sizing:content-box; border: 5px solid var(--color5);margin-right: 10px;border-radius: 9px;width: 15px;height: 15px;}
+      @media (min-width: 520px){.a,.a:focus,.a:hover,.a:visited{font-size: 16px;}}
     </style>
-    <!-- <script type="text/javascript" src=""></script> -->
     
 </head>
-<body class="">
-  <!-- <div class="fondo"></div> -->
+<body class="body">
 
- 
-
-    <div class="div-contenedor" style="text-align: center;">
-      <h1 class="color4">Website under construction</h1>
-      <br>
-      <img src="img/logo860x860-circular.png" alt="Logo of Cake Atelier Copenhagen" class="img-logo"/ width="200px" height="200px">
+  <main class="main">
+    <div class="div-contenedor" >
+      <h1 class="h1 color4">Website under construction</h1>
+      <img src="img/logo860x860-circular.png" alt="Logo of Cake Atelier Copenhagen" class="img-logo" width="200px" height="200px">
         
-      <div >
-        <!-- style="display: flex; align-items: center;gap: 20px;" -->
-         
-          <!-- <div style="display: flex;"> -->
-              <div>
-                <!-- <h2>Something Sweet is Coming Soon!</h2> -->
-                <!-- <p>We're baking up something special just for you.</p> -->
-                <!-- <p>Stay tuned for the grand opening of Cake Atelier - where art meets flavor.</p> -->
-                 
-                <p>Need to get in touch in the meantime? Reach out to us at:</p>
-                <div style="display: grid; margin: auto; width:max-content; gap: 10px;">
-                  <a class="footer_redes footer_instagram footer-background" target="_blank" href="https://www.instagram.com/cakeatelier.cph/?hl=en" aria-label="Email Cake Atelier Copenhagen">
-                    <img class="contacto__icono" src="img/iconos/envelope-regular.png" alt="">
+      <div>
+        <p class="p">Need to get in touch in the meantime? <span class="p__span">Reach out to us at:</span></p>
+        <div class="contacto">
+          <a class="footer_redes footer_instagram footer-background" target="_blank" href="https://www.instagram.com/cakeatelier.cph/?hl=en" aria-label="Email Cake Atelier Copenhagen">
+            <img class="contacto__icono" src="img/iconos/envelope-regular.png" alt="Email Icon for Cake Atelier Copenhagen">
                     orders@cakeateliercph.dk</a>
-                  <a class="footer_redes footer_instagram footer-background" target="_blank" href="https://www.instagram.com/cakeatelier.cph/?hl=en" aria-label="Whatsapp Cake Atelier Copenhagen">
-                    <img class="contacto__icono" src="img/iconos/whatsapp-blanco.svg" alt="">
-                    +45 91702650</a>
-                     
-                  <a class="footer_redes footer_instagram footer-background" target="_blank" href="https://www.instagram.com/cakeatelier.cph/?hl=en" aria-label="Instagram Cake Atelier Copenhagen">
-                    <img class="contacto__icono" src="img/iconos/instagram.webp" alt="">Follow us for updates and sneak peeks!
-                    </a>
-                  </div>
-              </div>
-            <!-- </div> -->
-
-         <!-- <div>
-          <img src="img/tortas/torta2.jpeg" alt="">
-         </div> -->
+          <a class="footer_redes footer_instagram footer-background" target="_blank" href="https://www.instagram.com/cakeatelier.cph/?hl=en" aria-label="Whatsapp Cake Atelier Copenhagen">
+            <img class="contacto__icono" src="img/iconos/whatsapp-blanco.svg" alt="WhatsApp Icon for Cake Atelier Copenhagen"> +45 91702650</a>
+          <a class="footer_redes footer_instagram footer-background" target="_blank" href="https://www.instagram.com/cakeatelier.cph/?hl=en" aria-label="Instagram Cake Atelier Copenhagen">
+            <img class="contacto__icono" src="img/iconos/instagram.webp" alt="Instagram Icon for Cake Atelier Copenhagen">Follow us for updates and sneak peeks!</a>
         </div>
+             
+      </div>
     </div>
+
+  </main>
     
 </body>
 </html>
