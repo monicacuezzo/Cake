@@ -1,0 +1,61 @@
+/* normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+
+/* 1. Add base styles */
+html {
+    line-height: 1.15; /* 1 */
+    -webkit-text-size-adjust: 100%; /* 2 */
+  }
+  
+  body {
+    margin: 0;
+  }
+  
+  /* 2. Improve the display of certain elements */
+  article,
+  aside,
+  footer,
+  header,
+  nav,
+  section {
+    display: block;
+  }
+  
+  h1,h2,h3,h4,h5,h6 {
+    font-size: 1rem;
+    margin: 0;
+    display: block;
+  }
+  
+  /* 3. Remove list styles on list elements */
+  ul,
+  ol {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* 4. Improve text rendering consistency */
+  strong {
+    font-weight: bolder;
+  }
+  
+  /* 5. Ensure media elements align with surrounding text */
+  img {
+    border-style: none;
+    max-width: 100%;
+    display: block;
+  }
+  
+  /* 6. Reset table styles */
+  table {
+    border-collapse: collapse;
+  }
+  
+  td,
+  th {
+    padding: 0;
+  }
+  a,button{appearance: none;background:transparent;border: none;outline: 0;box-shadow: none;text-decoration: none;display: inline-block;}
+  
+  /* Other rules omitted for brevity */
+  
