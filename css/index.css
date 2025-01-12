@@ -117,7 +117,7 @@ a.header__nav-link.active{
 .workshop__title{font-size: 2.375rem;font-weight: 600;margin-bottom: 6rem;text-shadow: 0 0 5px #666;color: var(--color-font-menu);}
 .workshop__subtitle{font-size: 1.7rem;margin-bottom: 2rem;}
 .workshop__p{margin-bottom: 6rem;font-size: 1.2rem;}
-.workshop__content {top: 120%;position: absolute;       will-change: transform; 
+.workshop__content {top: 110%;position: absolute;       will-change: transform; 
         /* transition: transform 0.1s linear; */
     }
 
