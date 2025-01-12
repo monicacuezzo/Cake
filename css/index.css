@@ -1,12 +1,4 @@
 @import "normalize.css";
-@font-face {
-  font-family: 'Montserrat';
-  src: url('../fonts/Montserrat-VariableFont_wght.woff2') format('woff2');
-  font-weight: 100 900; 
-  font-style: normal;
-  font-display: swap;  
-}
-
 :root{
     --font-primary: 'Montserrat', sans-serif;
     --max-width: 1200px;
@@ -14,7 +6,7 @@
     --color-brand: #ebf094;
     --color-dark: #223342;
     --color-light: #e8e2d6;
-    --color-accent: #e34d4e;
+    --color-accent: #e34d4e; /*contraste aceptado DF2F2F*/
   --color-bg-menu: rgba(34,51,66,.5);
   --color-font-menu: #fafafa;
   --color-pink: #F4C6B8;
@@ -27,20 +19,19 @@
     padding: 0;
 }
   
-html{scroll-behavior: smooth;overflow-y: scroll;
-  scroll-behavior: smooth;}
+html{scroll-behavior: smooth;overflow-y: scroll;}
 html, body {
-    margin: 0;padding: 0!important;width: 100vw;overflow-x: hidden;
+    margin: 0;padding: 0!important;width: 100vw;
+    overflow-x: hidden; 
+    scroll-behavior: smooth;
     font-family: var(--font-primary);
     line-height: 1.6;
     /* background-color: #e7e1d6; */
     font-size: 16px;
 }
 .d_flex{display: flex;}.j_between{justify-content: space-between;}.f_column{flex-direction: column;} .align_center{align-items: center;}.j_center{justify-content: center;}.align_start{align-items: flex-start;}
-.w_100{width: 100%;}.text-center{text-align: center;}.margin-auto{margin: auto;}
-.section{
-  padding-top: 138px;width: 100%;min-height: 100vh;position: relative;padding-bottom: 100px;
-}
+.w_100{width: 100%;}.text-center{text-align: center;}.margin-auto{margin: auto;}.p_relative{position: relative;}
+.section{   padding-top: 138px;width: 100%;min-height: 100vh;position: relative;padding-bottom: 100px; }
 .header {
   position: fixed;
   top: 0;
@@ -111,9 +102,6 @@ a.header__nav-link.active{
 
 .mobile-panel{display: none;}
 
-  /* seccion hero */
-  /* .section.shadow::after{display: block;content: '';width: 100%;height: 100%;background-color: rgba(0,0,0,.3);position: absolute;top: 0;left: 0;z-index: 1;} */
-
 .h1{font-size: 2rem;font-weight: 400;margin-bottom: 2rem;text-shadow: 0 0 5px #666;}
 .h1 strong{font-size: 2.375rem;text-shadow: 0 0 5px #333;}
 .h2{font-size: 1.5rem;margin-bottom: 4rem;font-weight: 600;}
@@ -125,10 +113,13 @@ a.header__nav-link.active{
 .btn--cta{background-color: var(--color-accent);color: #fff;border: 2px solid var(--color-accent)}
 .btn--cta:hover{background-color: transparent;color: var(--color-accent);}
 
-.workshop__title{font-size: 2.375rem;font-weight: 600;margin-bottom: 2rem;text-shadow: 0 0 5px #666;color: var(--color-font-menu);}
-.section--workshop{color: var(--color-font-menu);font-weight: 600;}
-.workshop__subtitle{font-size: 1.7rem;margin-bottom: 0.5rem;}
-.workshop__p{margin-bottom: 2rem;font-size: 1.2rem;}
+.section--workshop{color: var(--color-font-menu);font-weight: 600;height: calc(100vh + 150px);}
+.workshop__title{font-size: 2.375rem;font-weight: 600;margin-bottom: 6rem;text-shadow: 0 0 5px #666;color: var(--color-font-menu);}
+.workshop__subtitle{font-size: 1.7rem;margin-bottom: 2rem;}
+.workshop__p{margin-bottom: 6rem;font-size: 1.2rem;}
+.workshop__content {top: 120%;position: absolute;       will-change: transform; 
+        /* transition: transform 0.1s linear; */
+    }
 
 .section--hero{ position: relative;width: 100%;min-height:calc(100vh + 438px) ;}
 .hero__column{height: 100%;padding: 4rem;}
@@ -151,7 +142,7 @@ a.header__nav-link.active{
   background-repeat: no-repeat;
   background-size: cover;
 }
-.parallax-hero1{background-image: url(../img/hero1.png);z-index: 2;opacity: 1;  animation: slide-parallax-opacity 8s linear infinite;  
+.parallax-hero1{background-image: url(../img/hero1.png);z-index: 2;opacity: 1;  animation: slide-parallax-opacity 10s linear infinite;  
 }
 .parallax-hero2{background-image: url(../img/hero2.png);z-index: 1;opacity: 1;
   /* animation: slide-parallax-opacity 16s linear infinite; */
@@ -178,13 +169,13 @@ a.header__nav-link.active{
   transition: opacity 8s ease, transform 4s ease;
 }
 .about__column--left {
-  transform: translateX(-100%); /* Se mueve desde la izquierda */
+  transform: translateX(-30%); /* Se mueve desde la izquierda */
 }
 .about__column--center {
-  transform: translateY(100%); /* Se mueve desde abajo */
+  transform: translateY(90%); /* Se mueve desde abajo */
 }
 .about__column--right {
-  transform: translateX(100%); /* Se mueve desde la derecha */
+  transform: translateX(30%); /* Se mueve desde la derecha */
 }
 
 .section--about.visible .about__column {
@@ -316,10 +307,12 @@ background-clip: border-box;
 
 .parallax {
   min-height: 100vh;
-  background-attachment: fixed;
-  background-position: center;
+  /* background-attachment: fixed; */
+  background-position: center top;
   background-repeat: no-repeat;
   background-size: cover;
+  /* transition: background-position 0.3s ease; */
+  will-change: background-position;
 }
 .parallax1{background-image: url(../img/paleta-celeste.png);}
 .parallax10{background-image: url(../img/portada-con-sombra.png);}
@@ -335,7 +328,7 @@ background-clip: border-box;
 
 /* efecto aparecer y subir */
 .aplicar-efecto1:not(.visible){opacity: 0;  transition: opacity 8s ease, transform 6s ease;}
-.subir {transform: translateY(100%); /* Se mueve desde abajo */}
+.subir {transform: translateY(50%); /* Se mueve desde abajo */}
 .subir2 {transform: translateY(800%); /* Para elementos pequeños ej btn */}
 .visible .subir,.visible .subir2{opacity: 1;transform: translateY(0); /* Regresa a su posición original */}
 /* fin efecto */
@@ -382,6 +375,15 @@ background-clip: border-box;
 .how__steps{gap: 20px;max-width: 1200px;margin: -25px auto 6rem auto;}
 .how__step{flex: 1 20%;max-width: 157px;gap: 10px;}
 .how__text{display: block;height: 52px;}
+
+/* seccion howToOrder */
+#howToOrder2{background-color: #223342;color: #fff;}
+  .how__subtitle{margin-bottom: 2rem;}
+  .how__line{border: 2px solid var(--color-pink);max-width: 1100px;margin:4rem auto 0 auto;}
+  #howToOrder2 .how__number{background-color: var(--color-pink);color: #223342;font-weight: 700;font-size: 22px; width: 50px;height: 50px;border-radius: 50%;}
+  .how__steps{gap: 20px;max-width: 1200px;margin: -25px auto 6rem auto;}
+  .how__step{flex: 1 20%;max-width: 157px;gap: 10px;}
+  .how__text{display: block;height: 52px;}
 
 
 
