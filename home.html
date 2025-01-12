@@ -2,9 +2,11 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Cake Atelier Copenhagen - Discover unique cake designs and flavors.">
   <meta name="robots" content="noindex, nofollow">
+  <meta name="HandheldFriendly" content="true">
 
   <link rel="icon" href="/favicon.ico" />
   <link rel="icon" type="image/png" href="img/favicon/favicon-isologo-32x32.png" sizes="32x32" />
@@ -12,8 +14,22 @@
 
   <title>Cake Atelier Copenhagen</title>
   <link rel="preload" as="font" href="fonts/Montserrat-VariableFont_wght.woff2" type="font/woff2" crossorigin="anonymous">
-  <link rel="preload" href="css/index.css" as="style">
-  <link rel="stylesheet" href="css/index.css">
+
+  <link rel="preload" href="css/index.css" as="style" onload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="stylesheet" href="css/index.css"></noscript>
+ 
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scrollbar/8.8.4/smooth-scrollbar.js" integrity="sha512-3f8C6NAQZv0YfwHFnjF231IIVcfZPnzL8EcHhNlzcoSRoEvC/iKDbtC+oYvL+0fRmEUMUYSvrZSE08TcRZYpgA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
+
+  <style>@font-face{font-family:'Montserrat';src:url('fonts/Montserrat-VariableFont_wght.woff2') format('woff2');font-weight:100 900;font-style:normal;font-display:swap}</style>
+
+  <style>
+    #my-scrollbar {
+      width: 100vw;
+      height: 100vh;
+      overflow: auto;
+    }
+   
+  </style>
+
 </head>
 <body>
   <!-- 1-completar all Meta + robot
@@ -31,7 +47,8 @@
    10-ag efectos JS en el scroll de ingreso a c/seccion, desplazam de elem desde afuera/abajo/opacidad/etc
    11-agregar clase 'section' a "contacto"
    -->
-  <header class="header">
+
+   <header class="header">
     <div class="header__main d_flex j_between align_center">
       <a class="header__logo" href="#"><img src="img/logo-horizontal-blanco.webp" alt="" width="200" height="24"> </a>
       <div class="header__ico-menu" id="hamburger">
@@ -50,7 +67,6 @@
       <a class="header__nav-link internal-link" data-target="footer" href="#footer">CONTACT</a>
     </nav>
   </div>
-
   </header>
 
   <div class="mobile-panel mobile-panel--hidden" id="mobilePanel">
@@ -63,52 +79,11 @@
   </div>
 
 
+   <div id="my-scrollbar">
+
+
+
   <main class="main">
-        <!-- <div class="section__column">
-          <div class="carousel">
-            <img src="img/cake1.jpg" alt="Cake Design 1" class="carousel__image">
-            <img src="img/cake2.jpg" alt="Cake Design 2" class="carousel__image">
-            <img src="img/cake3.jpg" alt="Cake Design 3" class="carousel__image">
-          </div>
-        </div> -->
-    
-    <section id="hero-ante" class="section--hero parallax-container" style="display: none;">
-      <div class="parallax-slider">
-
-           <div class="parallax-slider__track">
-
-        <div class="parallax-slide">
-          <div class="hero__column d_flex align_center">
-            <div class="hero__text">
-              <h1 class="h1"><span class="h1--white">It's not just cake.</span><span class="h1--white"><strong>It's your Master-Piece of Cake.</strong> </span></h1>
-              <a href="#cakes" class="btn btn--cta">Explore Cakes</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="parallax-slide">
-          <div class="hero__column d_flex align_center">
-            <div class="hero__text">
-              <h1 class="h1"><span class="h1--white">Goodbye, boring.</span><span class="h1--white"><strong>Elevate your favourite cake flavor to a masterpiece design.</strong></span></h1>
-              <a href="#designs" class="btn btn--cta">Explore Designs</a>
-            </div>
-          </div>
-    
-        </div>
-
-        <div class="parallax-slide">
-          <div class="hero__column d_flex align_center">
-            <div class="hero__text">
-              <h1 class="h1"><span class="h1--white">It's not just cake.</span><span class="h1--primary">It's your Master-Piece of Cake.</span></h1>
-              <a href="#flavors" class="btn btn--cta">Explore flavours</a>
-            </div>
-          </div>
-        </div>
-
-           </div>
-      </div>
-
-    </section>
 
     <section id="hero" class="section section--hero">
         <div class="hero-slide parallax parallax-hero1">
@@ -131,92 +106,9 @@
         </div>
     </section>
 
-    
-  <!-- <div class="parallax2-container">
-    <div class="parallax2-background"></div>
-    <div class="parallax2-content">
-      <h1>Texto con efecto parallax</h1>
-      <p>Este texto se mueve a una velocidad diferente al fondo.</p>
-    </div>
-  </div>
-
-  <style>
-    .parallax2-container {
-  position: relative;
-  height: 100vh; /* Toda la altura de la ventana */
-  overflow: hidden;
-}
-
-/* Fondo con efecto parallax */
-.parallax2-background {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 150%; /* Más alto para permitir el desplazamiento */
-  background-image: url('img/portada-con-sombra.png');
-  background-size: cover;
-  background-attachment: fixed; /* Efecto parallax */
-  background-position: center;
-  transform: translateY(-20%); /* Velocidad más lenta */
-  z-index: -1;
-}
-
-/* Contenido con desplazamiento */
-.parallax2-content {
-  position: relative;
-  text-align: center;
-  color: white;
-  padding: 50px;
-  transform: translateY(20%); /* Velocidad diferente */
-}
-  </style> -->
-
-
-    <section id="about-ante" class="section section--about d_flex align_center j_center parallax parallax11" style="display: none;">
-      <div class="about__content-ante">
-        <!-- <div class="section__column">
-          <img src="img/about.jpg" alt="About Us Image" class="section__image">
-        </div> -->
-        <!-- <div class="section__column"> -->
-          <h2 class="h2 section__title w_100 text-center">About us - Story</h2>
-          <p class="section__text w_100 text-center"><strong>Where Baking Becomes Art</strong> </p>
-          <h3 class="section__subtitle w_100 text-center">Ornella's Creative Journey: From Canvas to Cake</h3>
-          <p class="section__text">Welcome to Cake Atelier, where each cake is a canvas, and every bite is a brushstroke of creativity, passion, and indulgence.</p>
-          <p class="section__text">My journey began not in a traditional bakery, but in the quiet moments where the art studio meets the kitchen. Here, the aroma of freshly baked cakes mingles with the vibrant hues of an artist's palette.</p>
-          <p class="section__text">Baking is my sanctuary, a meditative practice, and oil painting is where my imagination takes flight. At Cake Atelier, these two passions come together to create edible masterpieces that tell stories and celebrate life's special moments.
-          </p>
-          <div class="text-center">
-            <a href="#flavors" class="btn btn--cta">Discover more</a>
-
-          </div>
-        <!-- </div> -->
-      </div>
-    </section>
-
-    <!-- <section id="about2" class="section section--about2 d_flex align_center j_center parallax parallax13">
-      <div>
-        <div class="about__content2">
-            <div class="section__column">
-            <img src="img/about.jpg" alt="About Us Image" class="section__image">
-          </div> -->
-          <!-- <div class="section__column"> -->
-            <!-- <h2 class="h2 section__title">About us - Story</h2>
-            <p class="section__text "><strong>Where Baking Becomes Art</strong> </p>
-            <h3 class="section__subtitle w_100 ">Ornella's Creative Journey: From Canvas to Cake</h3>
-            <p class="section__text">Welcome to Cake Atelier, where each cake is a canvas, and every bite is a brushstroke of creativity, passion, and indulgence.</p>
-            <p class="section__text">My journey began not in a traditional bakery, but in the quiet moments where the art studio meets the kitchen. Here, the aroma of freshly baked cakes mingles with the vibrant hues of an artist's palette.</p>
-            <p class="section__text">Baking is my sanctuary, a meditative practice, and oil painting is where my imagination takes flight. At Cake Atelier, these two passions come together to create edible masterpieces that tell stories and celebrate life's special moments.
-            </p>
-            <a href="#flavors" class="btn btn--cta">Discover more</a> -->
-          <!-- </div> 
-        </div>
-      </div>
-    </section> -->
-
     <section id="about" class="section section--about aplicar-efecto1 d_flex align_center j_center">
 
-      <div class="about__column about__column--left d_flex align_center j_center">
+      <div class="about__column about__column--left d_flex align_center j_center efecto2">
         <img src="img/decorando1.jpg" alt="About Us Image" class="margin-auto" width="350">
         <!-- <img src="img/tortas/torta-sin-decorar.jpg" alt="About Us Image" class="" width="100"> -->
       </div>
@@ -274,13 +166,88 @@
               <span class="how__text">Pay and receive order confirmation</span>
               <img class="how__ico" src="img/iconos/file-invoice-dollar-solid.svg" alt="" height="50">
             </li>
-
             
           </ol>
            <a href="#flavors" class="btn btn--cta">Start your order</a>
-       
-      
     </section>
+
+    <section id="howToOrder2" class="section section--how text-center">
+        
+      <h2 class="h2 section__title w_100 text-center">HOW TO ORDER</h2>
+      <h3 class="how__subtitle">How to Order Your Dream Cake: A Step-by-Step Guide.</h3>
+      <hr class="how__line w_100">
+      <ol class="how__steps d_flex align_start w_100 j_between">
+
+        <li class="how__step d_flex f_column align_center text-center">
+          <div class="how__number d_flex align_center j_center">1</div>
+          <span class="how__text">Select cake size</span>
+          <!-- <img class="how__ico" src="img/iconos/chart-pie-solid.svg" alt="" height="50"> -->
+          <div class="icon icon1"></div>
+        </li>
+
+        <li class="how__step d_flex f_column align_center text-center">
+          <div class="how__number d_flex align_center j_center">2</div>
+          <span class="how__text">Choose type of cake and flavor</span>
+          <!-- <img class="how__ico" src="img/iconos/cake-candles-solid.svg" alt="" height="50"> -->
+          <div class="icon icon2"></div>
+        </li>
+
+        <style>
+
+.icon {
+  width: 50px; /* Ancho del icono */
+  height: 50px; /* Alto del icono */
+  background-color: white; /* Color del icono */
+  -webkit-mask-size: contain;
+  mask-size: contain;
+}
+.icon1 {
+  -webkit-mask: url('img/iconos/chart-pie-solid.svg') no-repeat center;
+  mask: url('img/iconos/chart-pie-solid.svg') no-repeat center;
+}
+.icon2 {
+  -webkit-mask: url('img/iconos/cake-candles-solid.svg') no-repeat center;
+  mask: url('img/iconos/cake-candles-solid.svg') no-repeat center;
+}
+.icon3 {
+  -webkit-mask: url('img/iconos/palette-solid.svg') no-repeat center;
+  mask: url('img/iconos/palette-solid.svg') no-repeat center;
+}
+.icon4 {
+  -webkit-mask: url('img/iconos/calendar-days-regular.svg') no-repeat center;
+  mask: url('img/iconos/calendar-days-regular.svg') no-repeat center;
+}
+.icon5 {
+  -webkit-mask: url('img/iconos/file-invoice-dollar-solid.svg') no-repeat center;
+  mask: url('img/iconos/file-invoice-dollar-solid.svg') no-repeat center;
+}
+        </style>
+
+        <li class="how__step d_flex f_column align_center text-center">
+          <div class="how__number d_flex align_center j_center">3</div>
+          <span class="how__text">Choose design style and color</span>
+          <!-- <img class="how__ico" src="img/iconos/palette-solid.svg" alt="" height="50"> -->
+          <div class="icon icon3"></div>
+        </li>
+
+        <li class="how__step d_flex f_column align_center text-center">
+          <div class="how__number d_flex align_center j_center">4</div>
+          <span class="how__text">Select pick up date</span>
+          <!-- <img class="how__ico" src="img/iconos/calendar-days-regular.svg" alt="" height="50"> -->
+          <div class="icon icon4"></div>
+        </li>
+
+        <li class="how__step d_flex f_column align_center text-center">
+          <div class="how__number d_flex align_center j_center">5</div>
+          <span class="how__text">Pay and receive order confirmation</span>
+          <!-- <img class="how__ico" src="img/iconos/file-invoice-dollar-solid.svg" alt="" height="50"> -->
+          <div class="icon icon5"></div>
+        </li>
+        
+      </ol>
+       <a href="#flavors" class="btn btn--cta">Start your order</a>
+</section>
+
 
     <section id="cakes" class="section section--cakes aplicar-efecto1">
       <div class="section__content text-center">
@@ -337,35 +304,36 @@
               <div class="cakes__item">
                 <div class="cakes__container">
                   <div class="cakes__img-container">
+                    <img class="cakes__img cakes__img-primary" src="img/Abstract-Elegance.JPG" alt="Roll Cakes: The Fluffy Crowd-Pleaser">
+                    <img class="cakes__img cakes__img-hover" src="img/tortas/roll2.png" alt="Tall Artistic Cakes: The Show-Stopper">
+                  </div>
+                </div>
+                <h3 class="cakes__h3">Abstract Elegance</h3>
+                <p class="cakes__subtit">Contemporary style with a creative twist</p>
+            </div>
+
+            <div class="cakes__item">
+              <div class="cakes__container">
+                <div class="cakes__img-container">
+                  <img class="cakes__img cakes__img-primary" src="img/Petal-crown.JPG" alt="Roll Cakes: The Fluffy Crowd-Pleaser">
+                  <img class="cakes__img cakes__img-hover" src="img/tortas/cake2.png" alt="Tall Artistic Cakes: The Show-Stopper">
+                </div>
+              </div>
+                <h3 class="cakes__h3">Petal Crown</h3>
+                <p class="cakes__subtit">Enchanting floral flair details</p>
+            </div>
+
+            <div class="cakes__item">
+                <div class="cakes__container">
+                  <div class="cakes__img-container">
                     <img class="cakes__img cakes__img-primary" src="img/Artistic-Bloom.JPG" alt="Roll Cakes: The Fluffy Crowd-Pleaser">
                     <img class="cakes__img cakes__img-hover" src="img/tortas/togo2.png" alt="Tall Artistic Cakes: The Show-Stopper">
                   </div>
                 </div>
                 <h3 class="cakes__h3">Artistic Bloom</h3>
-                <p class="cakes__subtit">xxxxxxxxxxx</p>
+                <p class="cakes__subtit">Our harmonious blend of designs</p>
               </div>
   
-             <div class="cakes__item">
-                  <div class="cakes__container">
-                    <div class="cakes__img-container">
-                      <img class="cakes__img cakes__img-primary" src="img/Abstract-Elegance.JPG" alt="Roll Cakes: The Fluffy Crowd-Pleaser">
-                      <img class="cakes__img cakes__img-hover" src="img/tortas/roll2.png" alt="Tall Artistic Cakes: The Show-Stopper">
-                    </div>
-                  </div>
-                  <h3 class="cakes__h3">Abstract Elegance</h3>
-                  <p class="cakes__subtit">xxxxxxxxxxx</p>
-              </div>
-  
-              <div class="cakes__item">
-                <div class="cakes__container">
-                  <div class="cakes__img-container">
-                    <img class="cakes__img cakes__img-primary" src="img/Petal-crown.JPG" alt="Roll Cakes: The Fluffy Crowd-Pleaser">
-                    <img class="cakes__img cakes__img-hover" src="img/tortas/cake2.png" alt="Tall Artistic Cakes: The Show-Stopper">
-                  </div>
-                </div>
-                  <h3 class="cakes__h3">Petal Crown</h3>
-                  <p class="cakes__subtit">xxxxxxxxxxx</p>
-              </div>
   
              </div>
 
@@ -373,14 +341,20 @@
     </section>
 
 
-    <section id="workshop" class="section section--workshop parallax parallax12">
-      <h2 class="h2 workshop__title w_100 text-center">WORKSHOP</h2>
-      <div class="hero__column d_flex align_center">
-        <div class="hero__text">
-          <h3 class="workshop__subtitle">Learn the Art of Cake Decoration</h3>
-          <p class="workshop__p">Join our 2-hour basic-level cake decoration workshop to master the essentials of buttercream artistry. Perfect for beginners looking to create their own edible masterpieces.</p>
-          <a href="#flavors" class="btn btn--cta">Book Your Spot</a>
+    <section id="workshop" class="section section--workshop parallax parallax12 p_relative">
+      <div id="workshopContent" class="workshop__content" style="">
+        <!-- style="transform: translateY(-200%);" -->
+
+        <h2 class="h2 workshop__title w_100 text-center">WORKSHOP</h2>
+        <div class="hero__column d_flex align_center">
+          <div class="hero__text">
+            <h3 class="workshop__subtitle">Learn the Art of Cake Decoration</h3>
+            <p class="workshop__p">Join our 2-hour basic-level cake decoration workshop to master the essentials of buttercream artistry. Perfect for beginners looking to create their own edible masterpieces.</p>
+            <a href="#flavors" class="btn btn--cta">Book Your Spot</a>
+          </div>
         </div>
+
+        
       </div>
     </section>
   </main>
@@ -395,59 +369,82 @@
     <p class="footer__text">&copy; 2025 Cake Atelier Copenhagen. All rights reserved.</p>
   </footer>
 
-  <a id="buttonWapp" href="https://wa.me/4591702650" class="floating-button floating-button--wapp" target="_blank" rel="noopener noreferrer" aria-label="Chat with us on WhatsApp">
+   </div>  <!-- fin scrollbar container -->
+
+   <a id="buttonWapp" href="https://wa.me/4591702650" class="floating-button floating-button--wapp" target="_blank" rel="noopener noreferrer" aria-label="Chat with us on WhatsApp">
     <img src="img/iconos/wapp6k.webp" alt="WhatsApp" class="floating-button--wapp__img" width="50" height="50">
   </a>
 
   <a id="buttonTop" href="#hero" class="floating-button floating-button--up d_flex align_center j_center internal-link" aria-label="Back to top" title="Go top"></a>
 
 
-  <script defer>
+<script src="js/smooth-scrollbar.js"></script>
+
+   
+<script>
+
+
     let viewportHeight;
     
-    // function adjustButtonPositions() {
-    //     viewportHeight = document.documentElement.clientHeight || window.innerHeight;
-    //     const floatingBtns = document.getElementsByClassName('floating-button');
-    //     for (const btn of floatingBtns) {
-    //         btn.style.bottom = `${viewportHeight * 0.1}px`; // Ejemplo: 10% de la altura de la ventana
-    //     }
-    // }
+    document.addEventListener('DOMContentLoaded', function () {
+      viewportHeight = document.documentElement.clientHeight || window.innerHeight;
+
+      // Inicializa librería scroll smooth 
+      var Scrollbar = window.Scrollbar;
+      const scrollbar = Scrollbar.init(document.querySelector('#my-scrollbar'), {
+        damping: 0.1, // Ajusta la suavidad del desplazamiento
+      });
+
+      // Efecto parallax
+      const sectionWorkshop = document.querySelector('#workshopContent');
+      const sectionHero = document.querySelector('#hero');
+
+      scrollbar.addListener(({ offset }) => {
+        const scrollY = offset.y; // Obtiene la posición del scroll
+        // const parallaxSpeed = 0.3; // Ajusta la velocidad del efecto parallax SE USA????
+        // sectionWorkshop.style.top = `${scrollY * 0.1}px`; ejemplos de otros parallax
+        // sectionFooter.style.bottom = `${scrollY * 0.05}px`;ejemplos de otros parallax
+
+        // sectionWorkshop.style.transform = `translateY(${scrollY * 0.04}px)`; 0.04 hace que el texto se mueva mas lento que el scroll y de sensacion de ir bajando
+        sectionHero.style.transform = `translateY(${scrollY * -0.05}px)`; 
+        sectionWorkshop.style.transform = `translateY(${scrollY * -0.16}px)`; 
+
+      });
+
+
+       const internalLinks = document.getElementsByClassName('internal-link');
+       for (let i = 0; i < internalLinks.length; i++) {
+        internalLinks[i].addEventListener('click', (e) => {
+          e.preventDefault();
+
+          const targetId = internalLinks[i].getAttribute('data-target');
+          const targetElement = document.getElementById(targetId);
+
+          if (targetElement) {
+            // Obtener las coordenadas del destino dentro del contenedor manejado por smooth-scrollbar
+            const targetOffset = targetElement.getBoundingClientRect().top + scrollbar.scrollTop;
+
+            // calcular velocidad
+            const startPosition = window.scrollY;
+            const distance = targetOffset - startPosition;
+            const speed = (distance > (viewportHeight * 1.5)) ? Math.abs(distance / viewportHeight) * 600 : 900;
+            console.log('speed' , speed,distance,viewportHeight)
+
+            // Usar el método de smooth-scrollbar para hacer scroll
+            scrollbar.scrollTo(0, targetOffset, speed); // x = 0, y = targetOffset, duración = 1000ms
+          }        
+        });
+      }
+
+
+
+
+    }); // fin DOMloaded
+
+    
     
     window.addEventListener('load', () => {
-      // const floatingBtns = document.getElementsByClassName('floating-button');
-      // viewportHeight = document.documentElement.clientHeight || window.innerHeight;
-
-      
-      // deslizamiento suave para los links internos (nav-bar y float-up)
-        const internalLinks = document.getElementsByClassName('internal-link');
-        const smoothScrollTo = (targetPosition, duration = 3000) => {
-            const startPosition = window.scrollY;
-            const distance = targetPosition - startPosition;
-            let startTime = null;
-            const animation = (currentTime) => {
-                if (!startTime) startTime = currentTime;
-                const timeElapsed = currentTime - startTime;
-                const progress = Math.min(timeElapsed / duration, 1);
-                window.scrollTo(0, startPosition + distance * progress);
-                if (timeElapsed < duration) {
-                    requestAnimationFrame(animation);
-                }
-            };
-            requestAnimationFrame(animation);
-        };
-        for (const link of internalLinks) {
-            link.addEventListener('click', (event) => {
-                event.preventDefault();
-                const targetId = link.getAttribute('href').substring(1);
-                const targetElement = document.getElementById(targetId);
-                if (targetElement) {
-                    const targetPosition = targetElement.offsetTop;
-                    smoothScrollTo(targetPosition, 3000);
-                }
-            });
-        }
-        // FIN deslizamiento suave para los links internos (nav-bar y float-up)
-    
+   
     
         // MENU MOBILE -  efecto btn hamburger y  deslizamiento menu 
         const hamburger = document.getElementById('hamburger');
