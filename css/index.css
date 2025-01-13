@@ -171,7 +171,19 @@ a.header__nav-link.active{
   transition: opacity 8s ease, transform 4s ease;
 }
 .about__column--left {
+  /* gap: 15px; */
   transform: translateX(-30%); /* Se mueve desde la izquierda */
+}
+.image--clip {
+  clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 100%);
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 100%);
+  transition: clip-path 0.3s ease;
+}
+/* Segunda imagen: Triángulo invertido en la parte superior */
+.image--clip-second {
+  clip-path: polygon(0 15%, 100% 0, 100% 100%, 0% 100%);
+  -webkit-clip-path: polygon(0 15%, 100% 0, 100% 100%, 0% 100%);
+  transition: clip-path 0.3s ease;
 }
 .about__column--center {
   transform: translateY(90%); /* Se mueve desde abajo */
