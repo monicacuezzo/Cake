@@ -223,7 +223,7 @@ background-clip: border-box;
 
 
 .section__title{font-size: 1.75rem;margin-bottom: 2rem;text-transform: uppercase;}
-.section__subtitle{font-size: 1.5rem;margin-bottom: 2rem;color:blue}
+.section__subtitle{font-size: 1.5rem;margin-bottom: 2rem;color: var(--color-accent)}
 .section__text{font-weight: 500;font-size: 1rem;margin-bottom: 1rem;}
 
 .parallax1{background-image: url(../img/paleta-celeste.png);}
